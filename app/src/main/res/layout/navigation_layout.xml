@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.amap.api.navi.AMapNaviView
+        android:id="@+id/navi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/drive_nav_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectNavigationMode"
+            android:text="@string/drive_nav_mode"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/bus_nav_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectNavigationMode"
+            android:text="@string/bus_nav_mode"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/ride_nav_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectNavigationMode"
+            android:text="@string/ride_nav_mode"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/walk_nav_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectNavigationMode"
+            android:text="@string/walk_nav_mode"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>
